@@ -10,3 +10,7 @@ module r_square(x,y,r,fn=120){
       translate([x-r,y-r]) circle(r);
     }
 }
+
+module r_square_3d(x,y,z,r,fn=120){
+    linear_extrude(height = z, center = false) r_square(x,y,r,fn);
+}
