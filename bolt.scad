@@ -5,3 +5,6 @@ module bolt_hole(height,outer_r,inner_r,fn=30){
     }
 }
 
+module bolt_hole_2d(d){
+    circle(d=d,$fn=50);
+}
